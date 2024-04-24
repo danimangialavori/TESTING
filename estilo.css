@@ -1,7 +1,7 @@
-h1 {color: red; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h1 {color: red; font-family: Verdana, Geneva, Tahoma, sans-serif;display: flex; justify-content: center;}
 body{background-color:linen}
-h3 {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h3 {font-family: Verdana, Geneva, Tahoma, sans-serif;display: flex; justify-content: center;}
 div{color: rgb(85, 41, 5); font-size: small; }
 div1{color: rgb(85, 41, 5); font-size: larger;}
 div6 {display: flex; justify-content: center; width: 400px; margin-left: 100px;}
-div0 {display: flex;}
+div0 {display: flex; justify-content: center;}
