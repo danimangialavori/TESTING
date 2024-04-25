@@ -6,6 +6,7 @@ function validacion()
     var email =document.getElementById("email").value;
     var dni =document.getElementById("dni").value;
     var fechadenacimiento =document.getElementById("fechadenacimiento").value
+    
     alert(nombre + " " + apellido + " " + email +  " " + dni + " " + fechadenacimiento);
 }
 

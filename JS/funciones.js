@@ -15,6 +15,11 @@ $(document).on('click', '#btn_register', function()
 {
 var user = $('#nombre').val();
 var email= $('#email').val();
+var apellido= $('#apellido').val();
+var dni= $('#dni').val()
+var fechadenacimiento= $('#fechadenacimiento').val();
+var contrasena= $('#Contrasena').val();
+var repetir= $('#Repetir').val ();
 
 if(nombre == "" || email == "")
 {
