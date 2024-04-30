@@ -23,7 +23,7 @@ var repetir= $('#Repetir').val ();
 
 if(nombre == "" || email == "")
 {
-    $('#Message').html ("Llenar los campos en blanco");
+    $('#Mensaje').html ("Llenar los campos en blanco");
 }
 else
 {
@@ -32,10 +32,12 @@ else
         {
             URL: 'insertar.php',
             method: 'post',
-            data: {Uname:UserActivation, UEmail:Email},
+            data: {Uname:user, UEmail:email, Uapellido:apellido, Udni:dni, Ufechadenacimiento:fechadenacimiento, Ucontrasena:contrasena, Urepetir:repetir},
             success: function (data)
         {
-            $('#message').html (data);
+           // $('#Mensaje').html (data);
+           $('#Mensaje').html ('Se Inserto Bien');
+
            // $('#Registration').modal ('show');
            // $('form').trigger ('reset')
            // Mostrar_registro();
