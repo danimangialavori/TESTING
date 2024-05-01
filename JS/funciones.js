@@ -1,9 +1,8 @@
-$(document).ready(function()
+$(document).ready(function() 
 {
 
-alert("Entro a la funcion");
-
-insertar_registro()
+    alert("Hola");
+insertar_registro();
 
 
 }
@@ -35,13 +34,20 @@ else
             data: {Uname:user, UEmail:email, Uapellido:apellido, Udni:dni, Ufechadenacimiento:fechadenacimiento, Ucontrasena:contrasena, Urepetir:repetir},
             success: function (data)
         {
-           // $('#Mensaje').html (data);
-           $('#Mensaje').html ('Se Inserto Bien');
+            $('#Mensaje').html (data);
+           //$('#Mensaje').html ('Se Inserto Bien');
 
            // $('#Registration').modal ('show');
            // $('form').trigger ('reset')
            // Mostrar_registro();
+
+           alert("Entro a la funcion");
+           alert(data);
+
         } 
+
+
+
         }
     )
 }
