@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-05-2024 a las 00:39:32
+-- Tiempo de generación: 09-05-2024 a las 00:44:17
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -24,17 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `e-mail`
---
-
-CREATE TABLE `e-mail` (
-  `ID` int(11) NOT NULL,
-  `Valor` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `fecha`
 --
 
@@ -48,12 +37,6 @@ CREATE TABLE `fecha` (
 --
 
 --
--- Indices de la tabla `e-mail`
---
-ALTER TABLE `e-mail`
-  ADD PRIMARY KEY (`ID`);
-
---
 -- Indices de la tabla `fecha`
 --
 ALTER TABLE `fecha`
@@ -62,12 +45,6 @@ ALTER TABLE `fecha`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
-
---
--- AUTO_INCREMENT de la tabla `e-mail`
---
-ALTER TABLE `e-mail`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `fecha`
