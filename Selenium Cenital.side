@@ -1,0 +1,201 @@
+{
+  "id": "51fd7b09-7679-4c9a-909a-f3376d405f3d",
+  "version": "2.0",
+  "name": "Selenium Cenital",
+  "url": "https://cenital.com",
+  "tests": [{
+    "id": "3334af52-e45e-4ed1-ba12-3a97d701031a",
+    "name": "Test Cenital",
+    "commands": [{
+      "id": "fac4e1ac-db43-4abc-8f18-0be1cc50db78",
+      "comment": "",
+      "command": "open",
+      "target": "/sumate/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4806262-6723-45a3-9d6d-5f03c5c879d9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "795x703",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7138584e-082b-498f-9d83-d9731aaa2bea",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2840ca26-6c47-4773-85b3-929c08ad87c9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,48)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3bf9ffcd-c673-4abe-9fc7-c1422d716826",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-4543-field_0",
+      "targets": [
+        ["id=wpforms-4543-field_0", "id"],
+        ["name=wpforms[fields][0]", "name"],
+        ["css=#wpforms-4543-field_0", "css:finder"],
+        ["xpath=//input[@id='wpforms-4543-field_0']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-4543-field_0-container']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef17d28f-102a-4205-99e0-6749d02a8cfc",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-4543-field_0",
+      "targets": [
+        ["id=wpforms-4543-field_0", "id"],
+        ["name=wpforms[fields][0]", "name"],
+        ["css=#wpforms-4543-field_0", "css:finder"],
+        ["xpath=//input[@id='wpforms-4543-field_0']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-4543-field_0-container']/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": "Juan Jose Perez"
+    }, {
+      "id": "ea6c7801-0a97-43cf-91f8-9dae014b4c12",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-4543-field_1",
+      "targets": [
+        ["id=wpforms-4543-field_1", "id"],
+        ["name=wpforms[fields][1]", "name"],
+        ["css=#wpforms-4543-field_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-4543-field_1']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-4543-field_1-container']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "abcdefg@hola.com"
+    }, {
+      "id": "4dc56049-1392-4393-9c6e-30c0531f1ae5",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "id=wpforms-4543-field_2",
+      "targets": [
+        ["id=wpforms-4543-field_2", "id"],
+        ["name=wpforms[fields][2]", "name"],
+        ["css=#wpforms-4543-field_2", "css:finder"],
+        ["xpath=//textarea[@id='wpforms-4543-field_2']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-4543-field_2-container']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2711b52-6a3b-4dbd-b266-c9af0892ce5d",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=#wpforms-4543-field_2-container > .wpforms-field-label",
+      "targets": [
+        ["css=#wpforms-4543-field_2-container > .wpforms-field-label", "css:finder"],
+        ["xpath=//div[@id='wpforms-4543-field_2-container']/label", "xpath:idRelative"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Comentario o mensaje *')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a9f30bd-1cce-48fe-9622-cf8b599e6e6f",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-4543-field_2-container",
+      "targets": [
+        ["id=wpforms-4543-field_2-container", "id"],
+        ["css=#wpforms-4543-field_2-container", "css:finder"],
+        ["xpath=//div[@id='wpforms-4543-field_2-container']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-4543']/div/div[3]", "xpath:idRelative"],
+        ["xpath=//form/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86cde1d2-e6be-409e-9e16-f92a5c554b27",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-4543-field_2",
+      "targets": [
+        ["id=wpforms-4543-field_2", "id"],
+        ["name=wpforms[fields][2]", "name"],
+        ["css=#wpforms-4543-field_2", "css:finder"],
+        ["xpath=//textarea[@id='wpforms-4543-field_2']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-4543-field_2-container']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Este es un comentario de prueba "
+    }, {
+      "id": "de1e8435-8b39-4a60-9865-c37bfbc0fe18",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "da282cc8-41ac-4318-bf62-1d3f80cc8f9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.recaptcha-checkbox-border",
+      "targets": [
+        ["css=.recaptcha-checkbox-border", "css:finder"],
+        ["xpath=//span[@id='recaptcha-anchor']/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "595a7147-236e-48af-87f8-fd5c980c0a1e",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8d809e9-3be6-452d-bb83-d6cc234a13e6",
+      "comment": "",
+      "command": "type",
+      "target": "name=g-recaptcha-hidden",
+      "targets": [
+        ["name=g-recaptcha-hidden", "name"],
+        ["css=.wpforms-recaptcha-hidden", "css:finder"],
+        ["xpath=//input[@name='g-recaptcha-hidden']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-4543']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "8e53f73f-2b44-4a93-8d4d-625de680ec63",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-submit-4543",
+      "targets": [
+        ["id=wpforms-submit-4543", "id"],
+        ["name=wpforms[submit]", "name"],
+        ["css=#wpforms-submit-4543", "css:finder"],
+        ["xpath=//button[@id='wpforms-submit-4543']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-4543']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Enviar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "cb2d2e31-5abe-4608-9a3d-2e5d1b0c1cd7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3334af52-e45e-4ed1-ba12-3a97d701031a"]
+  }],
+  "urls": ["https://cenital.com/"],
+  "plugins": []
+}
