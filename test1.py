@@ -10,7 +10,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-class TestTest1():
+class TestUntitled():
   def setup_method(self, method):
     self.driver = webdriver.Chrome()
     self.vars = {}
@@ -18,51 +18,26 @@ class TestTest1():
   def teardown_method(self, method):
     self.driver.quit()
   
-  def test_test1(self):
-    # Test name: Test1
-    # Step # | name | target | value
-    # 1 | open | /Testing-1/formulario.html | 
-    self.driver.get("http://127.0.0.1/Testing-1/formulario.html")
-    # 2 | setWindowSize | 795x703 | 
+  def test_untitled(self):
+    self.driver.get("http://127.0.0.1/Testing/formulario.html")
     self.driver.set_window_size(795, 703)
-    # 3 | click | id=nombre | 
     self.driver.find_element(By.ID, "nombre").click()
-    # 4 | type | id=nombre | Jose
-    self.driver.find_element(By.ID, "nombre").send_keys("Jose")
-    # 5 | type | id=apellido | Calabres
-    self.driver.find_element(By.ID, "apellido").send_keys("Calabres")
-    # 6 | type | id=dni | 43876432
-    self.driver.find_element(By.ID, "dni").send_keys("43876432")
-    # 7 | type | id=email | sadasdada@gmail.com
-    self.driver.find_element(By.ID, "email").send_keys("sadasdada@gmail.com")
-    # 8 | click | css=label:nth-child(21) | 
+    self.driver.find_element(By.ID, "nombre").send_keys("Daniel")
+    self.driver.find_element(By.ID, "apellido").send_keys("Mangialavori")
+    self.driver.find_element(By.ID, "dni").send_keys("31010654")
+    self.driver.find_element(By.ID, "email").send_keys("danielmangialavori@gmail.com")
     self.driver.find_element(By.CSS_SELECTOR, "label:nth-child(21)").click()
-    # 9 | click | id=fechadenacimiento | 
     self.driver.find_element(By.ID, "fechadenacimiento").click()
-    # 10 | type | id=fechadenacimiento | 0001-06-12
     self.driver.find_element(By.ID, "fechadenacimiento").send_keys("0001-06-12")
-    # 11 | type | id=fechadenacimiento | 0019-06-12
     self.driver.find_element(By.ID, "fechadenacimiento").send_keys("0019-06-12")
-    # 12 | type | id=fechadenacimiento | 0198-06-12
     self.driver.find_element(By.ID, "fechadenacimiento").send_keys("0198-06-12")
-    # 13 | type | id=fechadenacimiento | 1977-09-05
-    self.driver.find_element(By.ID, "fechadenacimiento").send_keys("1977-09-05")
-    # 14 | click | id=Contrasena | 
+    self.driver.find_element(By.ID, "fechadenacimiento").send_keys("1988-06-12")
     self.driver.find_element(By.ID, "Contrasena").click()
-    # 15 | type | id=Contrasena | Pedro
     self.driver.find_element(By.ID, "Contrasena").send_keys("Pedro")
-    # 16 | type | id=Repetir | Pwsro
     self.driver.find_element(By.ID, "Repetir").send_keys("Pwsro")
-    # 17 | click | id=bici | 
     self.driver.find_element(By.ID, "bici").click()
-    # 18 | click | id=btn_register | 
     self.driver.find_element(By.ID, "btn_register").click()
-    # 19 | assertAlert | Entro a la funcion | 
     assert self.driver.switch_to.alert.text == "Entro a la funcion"
-    # 20 | assertAlert | 
     assert self.driver.switch_to.alert.text == "\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <script src=\"scripts.js\"></script>\r\n    <link rel=\"stylesheet\" href=\"estilo.css\">\r\n\r\n    <script\r\n  src=\"https://code.jquery.com/jquery-3.7.1.min.js\"\r\n  integrity=\"sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=\"\r\n  crossorigin=\"anonymous\"></script>\r\n\r\n  <script src=\"JS/funciones.js\"></script>\r\n</head>\r\n\r\n\r\n<body>\r\n\r\n\r\n<h1>Ejemplo de formulario en html</h1>\r\n\r\n\r\n<h3>Formulario de Login</h3>\r\n\r\n<div>\r\n\r\n<div>\r\n<form name=\"miform\" onsubmit=\"return validacion()\" method=\"post\">\r\n<label for=\"nombre\">Nombre: </label><br>\r\n<input type=\"text\" id=\"nombre\" name=\"nombre\"><br>\r\n<label for=\"apellido\">Apellido: </label><br>\r\n<input type=\"text\" id=\"apellido\"  name=\"apellido\"><br>\r\n<label for=\"dni\">DNI: </label><br>\r\n<input type=\"number\" id=\"dni\"  name=\"dni\"><br>\r\n<label for=\"e-mail\"> E-Mail: </label><br>\r\n<input type=\"email\" id=\"email\" name=\"email\"><br>\r\n<label for=\"text\"> Fecha de Nacimiento: </label><br>\r\n<input type=\"date\" id=\"fechadenacimiento\" name=\"fechadenacimiento\"><br>\r\n<label for=\"text\"> Contrasena: </label><br>\r\n<input type=\"password\" id=\"Contrasena\"  name=\"Contrasena\"><br>\r\n<label for=\"password\"> Repetir Contrasena: </label><br>\r\n<input type=\"password\" id=\"Repetir\"  name=\"Repetir\"><br>\r\n\r\n\r\n<label for=\"genero\">Genero: </label><br>\r\n<input type=\"radio\" id=\"\" value=\"Masculino\" name=\"genero\" checked > Masculino<br>\r\n<input type=\"radio\" id=\"\" value=\"Femenino\" name=\"genero\"> Femenino<br>\r\n<input type=\"radio\" id=\"\" value=\"Otro\" name=\"genero\"> Otro<br>\r\n<br>\r\n\r\n\r\n<label for=\"vehiculo\">Tipo de vehiculo: </label><br>\r\n<input type=\"checkbox\"  id=\"coche\" name=\"vehiculo\" value=\"Coche\"> Coche<br>\r\n<input type=\"checkbox\"  id=\"bici\" name=\"vehiculo\" value=\"Bicicleta\"> Bicicleta<br>\r\n\r\n\r\n<!--<input type =\"submit\" onclick=\"validacion()\">-->      \r\n\r\n<p id=\"Mensaje\"></p>\r\n\r\n<button type=\"button\" id=\"btn_register\" > Registrate </button>\r\n\r\n</div>\r\n</form>\r\n<div6>\r\n<img src=\"computadoras-1.jpeg\" width=\"400px\" height=\"310px\">\r\n</div6>\r\n</div>\r\n</body>\r\n</html>\r\n"
-    # 21 | assertAlert | Hola | 
     assert self.driver.switch_to.alert.text == "Hola"
-    # 22 | close |  | 
-    self.driver.close()
   
