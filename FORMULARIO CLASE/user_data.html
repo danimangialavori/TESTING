@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="scriptsform.js"></script>
+    <link rel="stylesheet" href="estiloform.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+  <script src="funcionesform.js"></script>
+</head>
+
+
+<body>
+
+
+<h1>Datos Personales</h1>
+
+
+<h3>(Empleado)</h3>
+
+<br>
+<br>
+<br>
+<br>
+
+<div>
+<form name="formularioempleado" onsubmit="return validacion()" method="post">
+<label for="nombre">Nombre: </label>
+<input type="text" id="nombre" name="nombre" placeholder="Juan">
+<label for="apellido">Apellido: </label>
+<input type="text" id="apellido"  name="apellido" placeholder="Perez"><br>
+<br>
+<br>
+
+<label for="calle">Direccion: </label>
+<input type="text" id="calle"  name="calle" placeholder="Calle">
+<input type="number" id="numero"  name="numero" placeholder="Numero">
+<input type="text" id="ciudad"  name="ciudad" placeholder="Ciudad"><br>
+<br>
+<br>
+<label for="codearea">Codigo de Area: </label>
+<input type="number" id="codearea"  name="codearea" placeholder="11"> 
+<label for="numtelefono">Telefono: </label>
+<input type="number" id="numtelefono"  name="numtelefono" placeholder="5555-5555">
+<br>
+<br>
+<label for="email">E-Mail: </label>
+<input type="email" id="email"  name="email" placeholder="ejemplo@mail.com">
+<label for="edad">Edad: </label>
+<input type="number" id="edad"  name="edad" placeholder="Edad"><br>
+<br>
+<br>
+<label for="text"> Fecha de Nacimiento: </label>
+<input type="date" id="fechadenacimiento" name="fechadenacimiento">
+
+<label for="genero" class="labelgenero">Genero: </label>
+<select name="" id="genero"> <option value="1">Masculino</option> <option value="2">Femenino</option> <option value="3">Otro</option></select>
+<br>
+<br>
+<br>
+<br>
+<button type="button" id="btn_register" > Registrar </button>
+</div>
+</form>
+<div class="imagen">
+  <img src="imagen.png" width="400px" height="330px" >
+</div>
+
+</body>
+</html>
