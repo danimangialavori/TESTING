@@ -1,6 +1,7 @@
 $(document).ready(function() 
 {
 
+   // alert("Hola");
 insertar_registro();
 
 
@@ -9,6 +10,7 @@ insertar_registro();
 function insertar_registro()
 {
 $(document).on('click', '#btn_register', function() 
+
 
 {
 var nombre = $('#nombre').val();
@@ -37,14 +39,14 @@ else
             data: {Unombre:nombre, Uapellido:apellido, Ucalle:calle, Unumero:numero, Uciudad:ciudad, Ucodearea:codearea, Unumtelefono:numtelefono, UEmail:email, Uedad:edad, Ufechadenacimiento:fechadenacimiento, Ugenero:genero},
             success: function (data)
         {
-            //$('#Mensaje').html (data);
+            $('#Mensaje').html (data);
            //$('#Mensaje').html ('Se Inserto Bien');
 
            // $('#Registration').modal ('show');
            // $('form').trigger ('reset')
            // Mostrar_registro();
 
-          // alert("Entro a la funcion");
+           //alert("Entro a la funcion");
           // alert(data);
 
         } 
@@ -56,3 +58,6 @@ else
 }
 })
 }
+
+
+
